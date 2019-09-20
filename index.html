@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- Navbar Atas -->
+    <div class="navbar-fixed">
+        <nav class="#40c4ff light-blue accent-2">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo"><b>HiMaTe UIN Suska Riau</b></a>
+                    <a href="#" data-target="menu-nav" class="sidenav-trigger"><i class="material-icons">enu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="badges.html">Materi</a></li>
+                        <li><a href="badges.html">Tugas</a></li>
+                        <li><a href="badges.html"></a></li>
+                        <li><a href="badges.html">Kosentrasi</a></li>
+                        <li><a href="sass.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Side Nav -->
+    <ul class="sidenav" id="menu-nav">
+        <li><a href="badges.html">Materi</a></li>
+        <li><a href="badges.html">Tugas</a></li>
+        <li><a href="badges.html"></a></li>
+        <li><a href="badges.html">Kosentrasi</a></li>
+        <li><a href="sass.html">About Us</a></li>
+    </ul>
+
+    <!-- Slider -->
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="img/slider/1.png">
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                    <img src="img/slider/4.png">
+                    <div class="caption center-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+            <script type="text/javascript" src="js/materialize.min.js"></script>
+            <script>
+                const sideNav = document.querySelectorAll('.sidenav');
+                M.Sidenav.init(sideNav);
+
+                const slider = document.querySelectorAll('.slider');
+                M.Slider.init(slider, {
+                    indicators: false,
+                    height: 500,
+                    transition: 500,
+                    interval: 5000
+                });
+            </script>
+</body>
+</html>
